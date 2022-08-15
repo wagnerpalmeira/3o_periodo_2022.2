@@ -1,1 +1,3 @@
-# 3o_periodo_2022.2
+# 3o Periodo 2022.2
+
+Link para aulas: https://tinyurl.com/2fxuyw42
