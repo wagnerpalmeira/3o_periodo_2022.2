@@ -1,0 +1,188 @@
+/* GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+h1, h2, h3, h4 {
+    color: #222;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+/* /GLOBAL */
+
+/* Header */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #000;
+    z-index: 9999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: rgb(182, 182, 182);
+}
+
+.navbrand {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* /Header */
+
+/* Hero */
+
+#hero {
+    background-image: url("../imgs/back.webp");
+    width: 100%;
+    height: 46.3vh;
+}
+
+/* /Hero */
+
+/* Products */
+
+#products, #recents {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.col-4{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    margin: 15px 0;
+}
+
+.card {
+    padding: 5px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card .card-desc {
+    text-align: start;
+    padding: 10px 0
+}
+
+.card .card-desc span {
+    color: red;
+    font-size: 12px;
+}
+
+.card .card-desc h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+
+.card-desc h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: green;
+}
+
+.btn-buy {
+    background: green;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* /Products */
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* /Footer */
+
+
+@media screen and (max-width:600px) {
+    #header > nav {
+        display: none !important;
+    }
+
+    .col-4 {
+        width: 100%;
+    }
+}
